@@ -42,7 +42,7 @@ WHITE	=	\e[0m
 all:	$(NAME)
 
 $(OBJ):	%.o: %.c
-	gcc $(INCLUDE) -g3 -c -o $@ $<
+	gcc -Wl,--rpath=/lib/x86_64-linux-gnu/libc.so.6 $(INCLUDE) -g3 -c -o $@ $<
 	echo -e "$(BOLD)$(BLUE)File $(RED)$@$(BLUE) created.$(WHITE)"
 
 $(NAME):	$(OBJ)
