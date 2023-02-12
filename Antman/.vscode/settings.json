@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "random": "c",
-        "antman.h": "c",
-        "sstream": "c",
-        "stdlib.h": "c",
-        "my.h": "c"
-    }
-}
